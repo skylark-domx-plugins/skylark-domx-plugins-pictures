@@ -1,0 +1,1 @@
+{"version":3,"sources":["pictures.js"],"names":["define","skylark","attach"],"mappings":";;;;;;;AAAAA,QACI,yBACF,SAAUC,GACR,aAEA,OAAOA,EAAQC,OAAO","file":"../pictures.js","sourcesContent":["define([\n    \"skylark-langx/skylark\"\n],function (skylark) {\n    'use strict';\n\n    return skylark.attach(\"domx.plugins.pictures\");\n\n});"]}
