@@ -109,7 +109,7 @@ define('skylark-domx-plugins-pictures/viewer',[
     var PictureViewer = plugins.Plugin.inherit({
         klassName : "PictureViewer",
 
-        pluginName : "lark.domx.pictureviewer",
+        pluginName : "lark.pictures.pictureviewer",
 
         options : {
             ratioThreshold: 0.1,
