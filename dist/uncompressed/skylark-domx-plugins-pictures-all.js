@@ -123,20 +123,35 @@ define('skylark-langx-ns/main',[
 });
 define('skylark-langx-ns', ['skylark-langx-ns/main'], function (main) { return main; });
 
+define('skylark-domx-plugins-base/plugins',[
+    "skylark-langx-ns"
+], function(skylark) {
+    "use strict";
+
+    var pluginKlasses = {},
+        shortcuts = {};
+
+
+    return  skylark.attach("domx.plugins",{
+        pluginKlasses,
+        shortcuts
+    });
+});
+define('skylark-domx-plugins-pictures/pictures',[
+    "skylark-domx-plugins-base/plugins"
+], function(plugins) {
+    'use strict';
+
+	return plugins.pictures = {};
+});
+
+
 define('skylark-langx/skylark',[
     "skylark-langx-ns"
 ], function(ns) {
 	return ns;
 });
 
-define('skylark-domx-plugins-pictures/pictures',[
-    "skylark-langx/skylark"
-],function (skylark) {
-    'use strict';
-
-    return skylark.attach("domx.plugins.pictures");
-
-});
 define('skylark-langx-types/types',[
     "skylark-langx-ns"
 ],function(skylark){
@@ -19354,20 +19369,6 @@ define('skylark-domx-images/preload',[
   }
 
   return images.preload = preload;
-});
-define('skylark-domx-plugins-base/plugins',[
-    "skylark-langx-ns"
-], function(skylark) {
-    "use strict";
-
-    var pluginKlasses = {},
-        shortcuts = {};
-
-
-    return  skylark.attach("domx.plugins",{
-        pluginKlasses,
-        shortcuts
-    });
 });
 define('skylark-domx-plugins-base/plugin',[
     "skylark-langx-ns",

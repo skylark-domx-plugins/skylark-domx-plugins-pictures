@@ -1,8 +1,8 @@
 define([
-    "skylark-langx/skylark"
-],function (skylark) {
+    "skylark-domx-plugins-base/plugins"
+], function(plugins) {
     'use strict';
 
-    return skylark.attach("domx.plugins.pictures");
-
+	return plugins.pictures = {};
 });
+

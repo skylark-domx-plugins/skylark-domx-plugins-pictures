@@ -87,13 +87,14 @@
 })(function(define,require) {
 
 define('skylark-domx-plugins-pictures/pictures',[
-    "skylark-langx/skylark"
-],function (skylark) {
+    "skylark-domx-plugins-base/plugins"
+], function(plugins) {
     'use strict';
 
-    return skylark.attach("domx.plugins.pictures");
-
+	return plugins.pictures = {};
 });
+
+
 define('skylark-domx-plugins-pictures/viewer',[
     "skylark-langx",
     "skylark-domx/eventer",

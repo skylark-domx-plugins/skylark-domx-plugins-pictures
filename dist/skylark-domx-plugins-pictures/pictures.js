@@ -5,5 +5,5 @@
  * @link https://github.com/skylark-domx-plugins/skylark-domx-plugins-pictures/
  * @license MIT
  */
-define(["skylark-langx/skylark"],function(t){"use strict";return t.attach("domx.plugins.pictures")});
+define(["skylark-domx-plugins-base/plugins"],function(s){"use strict";return s.pictures={}});
 //# sourceMappingURL=sourcemaps/pictures.js.map
